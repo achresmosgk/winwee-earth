@@ -44,34 +44,34 @@ const statsFactData = {
 };
 
 const servicesData = {
-    number: '03',
-    name: "Eco-Action Tracker",
+    number: '02',
+    name: "Our Work",
     heading: "What we do",
-    description: "A glimpse into our creativity—exploring innovative designs, successful collaborations, and transformative digital experiences.",
+    description: "A glimpse into our creativity—exploring innovative projects.",
     data: [
         {
             id: 1,
-            image: "/images/home/services/services_1.png",
-            heading: "Weekly Logging",
-            descp: "Students can record their eco-friendly activities, such as planting trees, recycling, conserving water, or reducing electricity usage."
+            image: "/images/home/services/1.svg",
+            heading: "Waste Tracker",
+            descp: "Students log plastic, paper, food waste reduction and can record their eco-friendly activities, such as planting trees, recycling, conserving water, or reducing electricity usage."
         },
         {
             id: 2,
-            image: "/images/home/services/services_2.png",
-            heading: "Progress Tracking",
-            descp: "Students can view their cumulative points, weekly streaks, and completed actions over time."
+            image: "/images/home/services/2.svg",
+            heading: "WinWee Magazine",
+            descp: "Student-led stories, comics, eco-projects."
         },
         {
             id: 3,
-            image: "/images/home/services/services_3.png",
-            heading: "Milestone Rewards",
-            descp: "Unlock digital badges, certificates, or special recognition when certain point thresholds or streaks are achieved."
+            image: "/images/home/services/3.svg",
+            heading: "Marketplace",
+            descp: "Eco-friendly products made by students with "
         },
         {
             id: 4,
-            image: "/images/home/services/services_4.png",
-            heading: "Impact Visibility",
-            descp: "Each logged action contributes to the Community Impact Map, showing how individual efforts combine for global environmental impact."
+            image: "/images/home/services/4.svg",
+            heading: "Leaderboards",
+            descp: "Recognizing top eco-schools and students globally."
         },
     ]
 };
@@ -267,7 +267,7 @@ const aboutusStats = [
 ]
 
 const servicesSliderData = [
-    "Branding", "Web development", "Agency","Content creation","SaaS","Motion & 3d modeling","Photography"
+    "Eco-World"
 ]
 
 
