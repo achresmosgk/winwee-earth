@@ -20,12 +20,6 @@ const MenuData = [
     newTab: false,
   },
   {
-    id: 4,
-    title: "Blog",
-    path: "/blog",
-    newTab: false,
-  },
-  {
     id: 5,
     title: "Services",
     path: "/#services",
@@ -37,12 +31,7 @@ const MenuData = [
     path: "/contact",
     newTab: false,
   },
-  {
-    id: 7,
-    title: "Docs",
-    path: "/documentation",
-    newTab: false,
-  }
+ 
 ];
 
 

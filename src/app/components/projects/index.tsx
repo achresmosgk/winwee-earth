@@ -6,11 +6,10 @@ const ProjectList = () => {
         title: string;
         slug: string;
         ScopeOfWork: string[];
-        industry?: string;
         coverImage: string;
     };
 
-    const projects: Project[] = getAllProjects(["title", "slug", "ScopeOfWork", "industry", "coverImage"]);
+    const projects: Project[] = getAllProjects(["title", "slug", "ScopeOfWork", "coverImage"]);
 
 
     return (

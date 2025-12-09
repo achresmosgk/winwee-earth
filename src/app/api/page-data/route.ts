@@ -3,19 +3,19 @@ import { NextResponse } from "next/server";
 const avatarList = [
     {
         image: "/images/avatar/avatar_1.jpg",
-        title: "Sarah Johnson"
+        title: "Seed Saver"
     },
     {
         image: "/images/avatar/avatar_2.jpg",
-        title: "Olivia Miller"
+        title: "Plant Protector"
     },
     {
         image: "/images/avatar/avatar_3.jpg",
-        title: "Sophia Roberts"
+        title: "Earth Guardian"
     },
     {
         image: "/images/avatar/avatar_4.jpg",
-        title: "Isabella Clark"
+        title: "Planet Hero"
     },
 ];
 
@@ -101,18 +101,10 @@ const teamData = {
     number: '06',
     data: [
         {
-            image: "/images/home/team/team-img-1.png",
-            name: "Martha Finley",
-            position: "Creative Director",
+            image: "/images/home/team/team-img-1.jpg",
+            name: "Gaurika Kalia",
+            position: "Founder & Ceo",
             socialLinks: [
-                {
-                    icon: "/images/socialIcon/twitter.svg",
-                    link: "https://twitter.com"
-                },
-                {
-                    icon: "/images/socialIcon/Be.svg",
-                    link: "https://www.behance.net/"
-                },
                 {
                     icon: "/images/socialIcon/linkedin.svg",
                     link: "https://linkedin.com"
@@ -120,64 +112,20 @@ const teamData = {
             ]
         },
         {
-            image: "/images/home/team/team-img-2.png",
-            name: "Floyd Miles",
-            position: "Marketing Strategist",
+            image: "/images/home/team/team-img-2.jpg",
+            name: "Vibhuti",
+            position: "Eco Club Head",
             socialLinks: [
-                {
-                    icon: "/images/socialIcon/twitter.svg",
-                    link: "https://twitter.com"
-                },
-                {
-                    icon: "/images/socialIcon/Be.svg",
-                    link: "https://www.behance.net/"
-                },
                 {
                     icon: "/images/socialIcon/linkedin.svg",
                     link: "https://linkedin.com"
                 }
             ]
-        },
-        {
-            image: "/images/home/team/team-img-3.png",
-            name: "Glenna Snyder",
-            position: "Lead Designer",
-            socialLinks: [
-                {
-                    icon: "/images/socialIcon/twitter.svg",
-                    link: "https://twitter.com"
-                },
-                {
-                    icon: "/images/socialIcon/Be.svg",
-                    link: "https://www.behance.net/"
-                },
-                {
-                    icon: "/images/socialIcon/linkedin.svg",
-                    link: "https://linkedin.com"
-                }
-            ]
-        },
-        {
-            image: "/images/home/team/team-img-4.png",
-            name: "Albert Flores",
-            position: "UX/UI Developer",
-            socialLinks: [
-                {
-                    icon: "/images/socialIcon/twitter.svg",
-                    link: "https://twitter.com"
-                },
-                {
-                    icon: "/images/socialIcon/Be.svg",
-                    link: "https://www.behance.net/"
-                },
-                {
-                    icon: "/images/socialIcon/linkedin.svg",
-                    link: "https://linkedin.com"
-                }
-            ]
-        },
-    ]
-};
+        }
+        ]
+        };
+    
+
 
 const pricingData = {
     data: [
@@ -245,26 +193,29 @@ const contactData = {
 }
 
 const aboutusStats = [
-    {
-        number: 45,
-        postfix:"+",
-        title: 'Presence in global markets',
-        descp: "Expanding reach across international regions with localized expertise and worldwide impact."
-    },
-    {
-        number: 15,
-        prefix: "$",
-        postfix: "M",
-        title: 'In strategic investments',
-        descp: "Driving growth with curated partnerships and high-performing, audience-driven initiatives."
-    },
-    {
-        number: 158,
-        postfix: "+",
-        title: 'Trusted brand collaborations',
-        descp: "Shaping industry conversations through innovation, creativity, and lasting influence."
-    },
-]
+  {
+    number: 1,
+    postfix: "",
+    title: "Shared Mission, One Healthy Earth",
+    descp:
+      "All avatars work toward a common goal—helping students track waste and adopt environment-friendly habits."
+  },
+  {
+    number: 100,
+    postfix: "%",
+    title: "Action Through Awareness",
+    descp:
+      "By making waste tracking visual and fun, the eco tracker turns awareness into real-world action."
+  },
+  {
+    number: 0,
+    postfix: "",
+    title: "Zero-Waste Mindset",
+    descp:
+      "Every small reduction counts. Students progress with their avatar as they move closer to a zero-waste lifestyle."
+  }
+];
+
 
 const servicesSliderData = [
     "Eco-World"

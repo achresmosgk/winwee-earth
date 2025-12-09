@@ -29,33 +29,37 @@ const Contact = (props: { contactdataNumber: string }) => {
         fetchData()
     }, [])
     const reset = () => {
-        formData.name = "";
-        formData.email = "";
-        formData.message = "";
-    };
-    const handleSubmit = async (e: any) => {
-        e.preventDefault();
-        setLoader(true);
+  setFormData({
+    name: "",
+    email: "",
+    message: "",
+  });
+};
 
-        fetch("https://7@gmail.com", {
-            method: "POST",
-            headers: { "Content-type": "application/json" },
-            body: JSON.stringify({
-                name: formData.name,
-                email: formData.email,
-                message: formData.message,
-            }),
-        })
-            .then((response) => response.json())
-            .then((data) => {
-                setSubmitted(data.success);
-                setLoader(false);
-                reset();
-            })
-            .catch((error) => {
-                console.log(error.message);
-            });
-    };
+    const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setLoader(true);
+
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      setSubmitted(true);
+      reset();
+    }
+  } catch (error) {
+    console.error("Submit error:", error);
+  } finally {
+    setLoader(false);
+  }
+};
+
     const handleChange = (e: any) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({
@@ -86,7 +90,7 @@ const Contact = (props: { contactdataNumber: string }) => {
                     <div className="flex flex-col xl:flex xl:flex-row gap-15 xl:gap-48">
                         <div className="max-w-md flex flex-col gap-9 md:gap-16">
                             <div className="flex flex-col gap-5 md:gap-8">
-                                <p className="max-w-2xl text-secondary/70 dark:text-white/70">Let’s collaborate and create something amazing! Tell me about your project—I’m all ears.</p>
+                                <p className="max-w-2xl text-secondary/70 dark:text-white/70">Let’s collaborate and create something amazing! Tell us about your project...</p>
                                 <div>
                                     <ul className="flex flex-col gap-3">
                                         {contactData?.keypoint?.map((value:any, index:any) => {
