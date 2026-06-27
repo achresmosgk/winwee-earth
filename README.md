@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌿 WINWEE EARTH
+#  WINWEE EARTH
 
 ### **Empowering Young Eco-Leaders — One Action at a Time**
 
